@@ -27,10 +27,10 @@
                 if(question[a]===answer[a]){
                  count++;
                 }
-                else{
+                else if(question[a]!==answer[a] || question[a]===""){
                 var x=a+1;
-                alert("Question no "+ x +" answer is worng");
-            }
+                alert("Question no "+ x +" answer is worng");   
+               }
             }
             else{
                 var x=a+1;
