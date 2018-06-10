@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        alert("Welcome To The Test\n\nNOTE:\nAll the answers should be small characters");
+        var que1=prompt("Which city is Pakistan's Capital?");
+        var que2=prompt("What is the national animal of pakistan?");
+        var que3=prompt("What is the national language of Pakistan?");
+        var que4=prompt("What is the national game of pakistan?");
+        var que5=prompt("Which city is Punjab's Capital?");
+        
+        var question=[que1,que2,que3,que4,que5];
+        var answer=["islamabad","markhor","urdu","hockey","lahore"];
+        var count=0;
+
+        for(var i=0; i<question.length; i++){
+            
+            question[i];
+          
+        }
+        for(var a=0; a<question.length; a++){
+            if(question[a]!==""){
+                if(question[a]===answer[a]){
+                 count++;
+                }
+            }
+            else{
+                var x=a+1;
+                alert("Question no "+ x +" answer is worng");
+            }
+        }
+
+        var result=count*100/question.length;
+        if(result>=70){
+            alert("Congratulations you Passed\nYou got "+result+"%");
+        }
+        else{
+            alert("Awww you Failed\nBetter Luck Next Time\nYou got "+result+"%");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
